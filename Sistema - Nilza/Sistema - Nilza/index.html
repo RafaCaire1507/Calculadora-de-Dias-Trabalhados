@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dias Trabalhados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Dias Trabalhados</h1>
+
+        <div class="input-group">
+            <label for="periodName">Nome do Período:</label>
+            <input type="text" id="periodName" placeholder="Ex: 2016">
+        </div>
+
+        <div class="input-group">
+            <label for="workedDays">Dias Trabalhados:</label>
+            <input type="number" id="workedDays" placeholder="Ex: 200">
+        </div>
+
+        <div class="buttons">
+            <button id="addPeriodBtn">Adicionar Período</button>
+            <button id="resetBtn">Limpar</button>
+        </div>
+
+        <div id="periods">
+            <h3>Períodos Selecionados:</h3>
+            <ul id="periodList"></ul>
+        </div>
+
+        <div id="totalDays"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
